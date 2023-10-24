@@ -1,15 +1,30 @@
 /*  your css code here. If applicable */
-p::before{
-    color:#f00;
-    content: "Before Element";
-    font-size: 20px;
+:root{
+	background-color: rgb(135, 206, 235);
 }
-p::after{
-    color:#f00;
-    content: "Before Element";
-    font-size: 20px;
-     
+div :first-child{
+	background-color: black;
+	color: white;
 }
- #container{
-    margin: 20px;
- } 
+div :nth-child(2){
+	background-color: standard;
+/* 	color: white; */
+}
+div :last-child{
+/* 	background-color: black; */
+	color: red;
+}
+li{
+	background-color: gray;
+	width: 50%;
+	padding: 10px;
+}
+li:nth-child(odd){
+	background-color: white;
+}
+li:first-child , li:last-child{
+	font-size: 22px;
+} 
+li:nth-last-child(3){
+	background-color: pink;
+}
